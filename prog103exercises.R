@@ -184,10 +184,11 @@ height_m <- NULL   #This is a weird way of doing it. It works though!
 # widths, store the areas in a vector, and after they are all calculated print
 # them out:
 
-lengths = c(1.1, 2.2, 1.6)
-widths = c(3.5, 2.4, 2.8)
-areas <- rep(1, 3)
-for (i in areas) {
-  areas[i] <- lengths[i] * widths[i]
-}
-areas
+lengths = c(1.1, 2.2, 1.6) 
+widths = c(3.5, 2.4, 2.8) 
+areas <- seq(1:3) 
+for (i in areas) { 
+  areas[i] <- lengths[i] * widths[i] 
+} 
+areas 
+
